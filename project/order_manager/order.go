@@ -11,3 +11,7 @@ func NewOrder(orderID int, products []string) *Order {
 		products: products,
 	}
 }
+
+func (o *Order) SetProducts(newProducts []string) {
+	o.products = newProducts
+}
